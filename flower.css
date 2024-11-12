@@ -1,0 +1,92 @@
+body {
+  background: #131b21;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+
+#Footer_group_1_,
+[id^="PinkFlowerGroup"],
+[id^="BaseGroup"] path,
+[id^="LeafGroup"] path,
+path[id^="Stroke"],
+g[id^="BudGroup"] g[id^="BudGroup"] g[id^="Bud"],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^="Dots"],
+[id^="Flourish"] {
+  visibility: hidden;
+}
+
+.main__text {
+  background-image: linear-gradient(to right, #21a5af, #61bfba , #fcd8c5, #f7a998);
+  background-clip: text;
+  position: absolute;
+  top: 35%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: transparent;
+}
+
+.btn__right {
+  position: absolute;
+  top: 50%; 
+  left: 45%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: #21a5af;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 255, 229, 0.1);
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  transition: all .5s ease-in-out;
+}
+
+.btn__right:hover {
+  background-color: #61bfba;
+}
+
+.btn__left {
+  position: absolute;
+  top: 50%; 
+  left: 55%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #f7a998;
+  box-shadow: 0 0 10px 5px rgba(255, 145, 112, 0.1);
+
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  transition: all .5s ease-in-out;
+
+}
+
+.btn__left:hover {
+  background-color: #fcd8c5;
+}
+
+.btn__left.disabled,
+.btn__right.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
